@@ -1375,10 +1375,10 @@
      * @var {Object}
      */
     LANG: {
-      errorTitle: 'Form submission failed!',
-      requiredFields: 'You have not answered all required fields',
-      badTime: 'You have not given a correct time',
-      badEmail: 'You have not given a correct e-mail address',
+      errorTitle: 'Envio de formulário falhou!',
+      requiredFields: 'Você não preencheu todos os campos necessários',
+      badTime: 'Você não fornecer um horário correto',
+      badEmail: 'Você não forneceu um endereço de email correto',
       badTelephone: 'You have not given a correct phone number',
       badSecurityAnswer: 'You have not given a correct answer to the security question',
       badDate: 'You have not given a correct date',
