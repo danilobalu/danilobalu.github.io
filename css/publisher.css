@@ -154,19 +154,31 @@ header .intro-book {
 		position: relative;
 		margin:0 auto;
 	}
+	
+	
 }
 
 header .intro-text { 
 	position: relative;
+		
 }
+
+
+
 
 @media(max-width:768px) {
 	.intro-book img {
 		width:250px;
 		position: relative;
-		margin:0 auto;
-		bottom:-160px;
+		margin:10px auto;
+		
 	}
+	
+	
+	header  {
+	overflow-y: scroll;
+	}
+	
 }
 
 .container {
