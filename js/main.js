@@ -74,7 +74,8 @@ jQuery(function($) {
 		$('#sample-form').slideDown();
 		event.preventDefault();
 	});
-
+	
+	/*
 	$('form').submit(function(event){
 		if($(this).find(".has-error").length > 0)
 			return;
@@ -103,7 +104,8 @@ jQuery(function($) {
 				}
 		});
 	});
-
+	*/
+	
 	// Mobile Nav
 	$('.mobile-nav > ul').html($('.navbar-nav').html());
 	$('.mobile-nav').append("<a href='#' class='close-btn'><i class='icon_close'></i></a>");
