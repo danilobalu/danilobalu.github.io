@@ -52,7 +52,7 @@ else window.addEventListener('load', cb);
 				<a href="#book" class="scrollto btn btn-white">Sobre o livro</a>
 
 				<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-<form style="display:inline-block" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+<form style="display:block; float: right; margin-top: -100px;" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" onsubmit="PagSeguroLightbox(this); return false;">
 <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
 <input type="hidden" name="itemCode" value="367D265FCBCB7D0CC466EFA12F6DA83C" />
 <input type="submit" value="Compre o livro digital por R$ 29" class="btn btn-green" />
@@ -87,7 +87,14 @@ else window.addEventListener('load', cb);
 				<li><a href="#author" class="scrollto">Autor</a></li>
 				<!-- <li><a href="#contact" class="scrollto">Contato</a></li> -->
 				<li><a href="#biblio" class="scrollto">Conteúdo & Bibliografia</a></li>
-				<li><a href="#" class="btn btn-green">Compre o livro</a></li>
+				<li>				<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<form style="float:right;" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+<input type="hidden" name="itemCode" value="367D265FCBCB7D0CC466EFA12F6DA83C" />
+<input type="submit" value="Compre o livro" class="btn btn-green" />
+</form>
+<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+<!-- FINAL FORMULARIO BOTAO PAGSEGURO --></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
