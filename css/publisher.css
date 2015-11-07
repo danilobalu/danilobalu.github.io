@@ -35,6 +35,8 @@ h4 {font-size:24px;}
 h5 {font-size:20px;}
 h6 {font-size:18px;}
 
+
+
 .heading {
 	color:#484d53;
 	font-family:'Proxima Bold';
@@ -903,3 +905,9 @@ button:focus {
     bottom: 30px;
   }
 }
+
+p.bibliocom {
+    line-height: 100%;
+	margin-bottom: -15px;
+	font-size: 95%;
+	}
