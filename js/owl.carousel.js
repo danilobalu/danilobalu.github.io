@@ -111,7 +111,7 @@ if (typeof Object.create !== "function") {
                 base.transitionTypes(base.options.transitionStyle);
             }
             if (base.options.autoPlay === true) {
-                base.options.autoPlay = 5000;
+                base.options.autoPlay = 6000;
             }
             base.play();
 
@@ -1471,7 +1471,7 @@ if (typeof Object.create !== "function") {
         rewindSpeed : 1000,
 
         autoPlay : false,
-        stopOnHover : false,
+        stopOnHover : true,
 
         navigation : false,
         navigationText : ["prev", "next"],
