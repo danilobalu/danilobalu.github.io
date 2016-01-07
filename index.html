@@ -88,7 +88,7 @@ equívocos graves que muitos nutricionistas profissionais repetem em revistas e 
 				<form style="display:inline-block; max-width: 60px;" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" onsubmit="PagSeguroLightbox(this); return false;">
 				<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
 				<input type="hidden" name="itemCode" value="2917892788881A1FF4A0CFA9C5D53959" />
-				<input type="submit" value="Compre o livro digital por R$ 19" class="btn btn-green" />
+				<input type="submit" onclick="goog_report_conversion ()" value="Compre o livro digital por R$ 19" class="btn btn-green" />
 				</form>
 				<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
 				<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
@@ -125,7 +125,7 @@ equívocos graves que muitos nutricionistas profissionais repetem em revistas e 
 <form style="float:right;" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" onsubmit="PagSeguroLightbox(this); return false;">
 <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
 <input type="hidden" name="itemCode" value="2917892788881A1FF4A0CFA9C5D53959" />
-<input type="submit" value="Compre o livro" class="btn btn-green" />
+<input type="submit" onclick="goog_report_conversion ()" value="Compre o livro" class="btn btn-green" />
 </form>
 <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
 <!-- FINAL FORMULARIO BOTAO PAGSEGURO --></li>
@@ -706,6 +706,40 @@ equívocos graves que muitos nutricionistas profissionais repetem em revistas e 
 
 
 
+</script>
+
+<!-- Google Code for Clique em Comprar Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 938978437;
+    w.google_conversion_label = "nRJwCNKK_2IQhdnevwM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    window.google_is_call = true;
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
 
 
