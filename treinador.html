@@ -95,9 +95,10 @@ else window.addEventListener('load', cb);
 				
 				
 				<!-- INICIO FORMULARIO BOTAO PAGSEGURO REMOVIDO -->
-				<form style="display:inline-block; max-width: 60px;" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+				<form style="display:inline-block; max-width: 60px;" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
 				<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-				<input type="hidden" name="itemCode" value="B38D48898181A54774B15FB8EF93D5A4" />
+				<input type="hidden" name="code" value="B38D48898181A54774B15FB8EF93D5A4" />
+				<input type="hidden" name="iot" value="button" />
 				<input type="submit" onclick="goog_report_conversion ()" value="Compre" class="btn btn-green" />
 				</form>
 				<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
@@ -133,11 +134,12 @@ else window.addEventListener('load', cb);
 				<p class="small wow animated fadeInUp" style="color: white">Este não é um livro de treinamento, nem um manual para como bater seus recordes pessoais. O objetivo deste livro é trazer ao corredor (ou mesmo treinadores) questionamentos de dogmas antes não muito discutidos no treinamento e na prática da corrida. De forma didática e embasado em estudos científicos sérios e apresentados de forma simples, o livro nos leva a repensar tudo aquilo que diziam ser verdade nesta modalidade mais antiga que os Jogos Olímpicos. Ao terminar de ler a obra o leitor poderá questionar tudo o que você já ouviu falar sobre aspectos fundamentais corrida sem medo.</p>
 			</div>
 			
-							<!-- INICIO FORMULARIO BOTAO PAGSEGURO REMOVIDO -->
-				<form style="display:inline-block; max-width: 60px;" action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+				<!-- INICIO FORMULARIO BOTAO PAGSEGURO REMOVIDO -->
+				<form style="display:inline-block; max-width: 60px;" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
 				<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-				<input type="hidden" name="itemCode" value="B38D48898181A54774B15FB8EF93D5A4" />
-				<input type="submit" onclick="goog_report_conversion ()" value="Compre o livro digital por R$ 39" class="btn btn-green" />
+				<input type="hidden" name="code" value="B38D48898181A54774B15FB8EF93D5A4" />
+				<input type="hidden" name="iot" value="button" />
+				<input type="submit" onclick="goog_report_conversion ()" value="Compre" class="btn btn-green" />
 				</form>
 				<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
 				<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
